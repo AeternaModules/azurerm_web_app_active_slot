@@ -9,7 +9,7 @@ EOT
 
   type = map(object({
     slot_id                  = string
-    overwrite_network_config = optional(bool, true)
+    overwrite_network_config = optional(bool) # Default: true
   }))
 }
 
